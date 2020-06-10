@@ -25,7 +25,7 @@ SECRET_KEY = '3gx!0uq_=%l16#)kq4rrug61t0w88xeo0p0thyiuvhhjcjrm2*'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['gyloosh.pythonanywhere.com']
 
 
 # Application definition
