@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Welcome to relative url templates</h1>
+<!--w ten sposób robimy relative urls. basic_app tutaj odpowiada-->
+<!--app_name w urls.py w folderze bacis_app, a nie samej nazwie-->
+<!--folderu! po Przecinku jest other, które odpowiada temu co  -->
+<!--jest przekazana w urlpatterns jako name=other-->
+<a href="{% url 'basic_app:other' %}">THE OTHER PAGE</a>
+<!--Jeśli chccesz by strona admin też byłą relatywnie dostępna na różnych-->
+<!--serwerach to też trzebaby ją w ten sposób zrobić. Co prawda nie masz -->
+<!--dostępu do urls.py w admin (jest w środku django), ale jes tam taki wpis-->
+<!--który umożliwia to. (analogicznie do tego powyżej). -->
+<!--Po tym wpiscie mussz zrobić migracje-->
+<a href="{% url 'admin:index' %}">link to admin</a>
+<!--tutaj robimy relatywne odniesienie do index, jest to jeszcze prostsze, ponieważ-->
+<!--nie trzeba szukać teog w basic_app-->
+<a href="{% url 'index' %}">index</a>
+</body>
+</html>
